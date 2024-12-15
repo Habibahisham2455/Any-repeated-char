@@ -10,4 +10,18 @@ result="" # result=0 it will be integer
 for char,count in letter_count.items():
     result += f"{char}{count}"
 print(result)
+---------------------------------------------------------------
+from collections import defaultdict
+
+input_string = input("please enter a string: ")
+char_count = defaultdict(int)
+
+for char in input_string:
+    char_count[char] += 1
+
+result = ""
+for char, count in char_count.items():
+    result += f"{char}{count}"
+
+print(result)
  
